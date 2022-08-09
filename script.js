@@ -235,7 +235,7 @@ window.addEventListener("keydown",(event)=>{
         }
         if(occur2(p2,1)==3){
             var b1 = document.getElementById("p21");
-            j1.src = "IMG\\Frame 2.png"
+            j1.src = "Frame 2.png"
             b1.appendChild(j1)
         }
         if(occur2(p2,1)==4){

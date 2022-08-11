@@ -1,4 +1,6 @@
-alert("Press 'E' to play the game!!")
+var x = document.getElementById("tap")
+var pl1 = document.querySelector(".p1")
+var pl2 = document.querySelector(".p2")
 var chance = -1;
 var p1=[];
 var p2 = [];
@@ -30,8 +32,8 @@ j3.src = "Ellipse 1.png"
 j4.src = "Ellipse 1.png"
 j5.src = "Ellipse 1.png"
 j6.src = "Ellipse 1.png"
-window.addEventListener("keydown",(event)=>{
-    if(event.code=="KeyE"){
+function func(r){
+    if(r=="tap"){
         chance+=1;
         var num = Math.floor(Math.random()*5+1);
         
@@ -55,26 +57,46 @@ window.addEventListener("keydown",(event)=>{
         if(occur1(p1,1)==1){
             var b1 = document.getElementById("p11");
             b1.appendChild(i1)
+            pl1.classList.add('green')
+            setTimeout(function(){
+                pl1.classList.remove('green')
+            },500)
         }
         if(occur1(p1,1)==2){
             var b1 = document.getElementById("p11");
             i1.src="Frame 1.png"
             b1.appendChild(i1)
+            pl1.classList.add('green')
+            setTimeout(function(){
+                pl1.classList.remove('green')
+            },500)
         }
         if(occur1(p1,1)==3){
             var b1 = document.getElementById("p11");
             i1.src = "Frame 2.png"
             b1.appendChild(i1)
+            pl1.classList.add('green')
+            setTimeout(function(){
+                pl1.classList.remove('green')
+            },500)
         }
         if(occur1(p1,1)==4){
             var b1 = document.getElementById("p11");
             i1.src = "Frame 3.png"
             b1.appendChild(i1)
+            pl1.classList.add('green')
+            setTimeout(function(){
+                pl1.classList.remove('green')
+            },500)
         }
         if(occur1(p1,1)==5){
             var b1 = document.getElementById("p11");
             i1.src = "Frame 4.png"
             b1.appendChild(i1)
+            pl1.classList.add('green')
+            setTimeout(function(){
+                pl1.classList.remove('green')
+            },500)
             win+=1;
             if(win==1){
                 alert("Player 1 Wins!!")
@@ -86,26 +108,46 @@ window.addEventListener("keydown",(event)=>{
         if(occur1(p1,2)==1){
             var b1 = document.getElementById("p12");
             b1.appendChild(i2)
+            pl1.classList.add('green')
+            setTimeout(function(){
+                pl1.classList.remove('green')
+            },500)
         }
         if(occur1(p1,2)==2){
             var b1 = document.getElementById("p12");
             i2.src="Frame 1.png"
             b1.appendChild(i2)
+            pl1.classList.add('green')
+            setTimeout(function(){
+                pl1.classList.remove('green')
+            },500)
         }
         if(occur1(p1,2)==3){
             var b1 = document.getElementById("p12");
             i2.src = "Frame 2.png"
             b1.appendChild(i2)
+            pl1.classList.add('green')
+            setTimeout(function(){
+                pl1.classList.remove('green')
+            },500)
         }
         if(occur1(p1,2)==4){
             var b1 = document.getElementById("p12");
             i2.src = "Frame 3.png"
             b1.appendChild(i2)
+            pl1.classList.add('green')
+            setTimeout(function(){
+                pl1.classList.remove('green')
+            },500)
         }
         if(occur1(p1,2)==5){
             var b1 = document.getElementById("p12");
             i2.src = "Frame 4.png"
             b1.appendChild(i2)
+            pl1.classList.add('green')
+            setTimeout(function(){
+                pl1.classList.remove('green')
+            },500)
             win+=1;
             if(win==1){
                 alert("Player 1 Wins!!")
@@ -118,26 +160,47 @@ window.addEventListener("keydown",(event)=>{
         if(occur1(p1,3)==1){
             var b1 = document.getElementById("p13");
             b1.appendChild(i3)
+            pl1.classList.add('green')
+            setTimeout(function(){
+                pl1.classList.remove('green')
+            },500)
         }
         if(occur1(p1,3)==2){
             var b1 = document.getElementById("p13");
             i3.src="Frame 1.png"
             b1.appendChild(i3)
+
+            pl1.classList.add('green')
+            setTimeout(function(){
+                pl1.classList.remove('green')
+            },500)
         }
         if(occur1(p1,3)==3){
             var b1 = document.getElementById("p13");
             i3.src = "Frame 2.png"
             b1.appendChild(i3)
+            pl1.classList.add('green')
+            setTimeout(function(){
+                pl1.classList.remove('green')
+            },500)
         }
         if(occur1(p1,3)==4){
             var b1 = document.getElementById("p13");
             i3.src = "Frame 3.png"
             b1.appendChild(i3)
+            pl1.classList.add('green')
+            setTimeout(function(){
+                pl1.classList.remove('green')
+            },500)
         }
         if(occur1(p1,3)==5){
             var b1 = document.getElementById("p13");
             i3.src = "Frame 4.png"
             b1.appendChild(i3)
+            pl1.classList.add('green')
+            setTimeout(function(){
+                pl1.classList.remove('green')
+            },500)
             win+=1;
             if(win==1){
                 alert("Player 1 Wins!!")
@@ -150,26 +213,46 @@ window.addEventListener("keydown",(event)=>{
         if(occur1(p1,4)==1){
             var b1 = document.getElementById("p14");
             b1.appendChild(i4)
+            pl1.classList.add('green')
+            setTimeout(function(){
+                pl1.classList.remove('green')
+            },500)
         }
         if(occur1(p1,4)==2){
             var b1 = document.getElementById("p14");
             i4.src="Frame 1.png"
             b1.appendChild(i4)
+            pl1.classList.add('green')
+            setTimeout(function(){
+                pl1.classList.remove('green')
+            },500)
         }
         if(occur1(p1,4)==3){
             var b1 = document.getElementById("p14");
             i4.src = "Frame 2.png"
             b1.appendChild(i4)
+            pl1.classList.add('green')
+            setTimeout(function(){
+                pl1.classList.remove('green')
+            },500)
         }
         if(occur1(p1,4)==4){
             var b1 = document.getElementById("p14");
             i4.src = "Frame 3.png"
             b1.appendChild(i4)
+            pl1.classList.add('green')
+            setTimeout(function(){
+                pl1.classList.remove('green')
+            },500)
         }
         if(occur1(p1,4)==5){
             var b1 = document.getElementById("p14");
             i4.src = "Frame 4.png"
             b1.appendChild(i4)
+            pl1.classList.add('green')
+            setTimeout(function(){
+                pl1.classList.remove('green')
+            },500)
             win+=1;
             if(win==1){
                 alert("Player 1 Wins!!")
@@ -182,26 +265,46 @@ window.addEventListener("keydown",(event)=>{
         if(occur1(p1,5)==1){
             var b1 = document.getElementById("p15");
             b1.appendChild(i5)
+            pl1.classList.add('green')
+            setTimeout(function(){
+                pl1.classList.remove('green')
+            },500)
         }
         if(occur1(p1,5)==2){
             var b1 = document.getElementById("p15");
             i5.src="Frame 1.png"
             b1.appendChild(i5)
+            pl1.classList.add('green')
+            setTimeout(function(){
+                pl1.classList.remove('green')
+            },500)
         }
         if(occur1(p1,5)==3){
             var b1 = document.getElementById("p15");
             i5.src = "Frame 2.png"
             b1.appendChild(i5)
+            pl1.classList.add('green')
+            setTimeout(function(){
+                pl1.classList.remove('green')
+            },500)
         }
         if(occur1(p1,5)==4){
             var b1 = document.getElementById("p15");
             i5.src = "Frame 3.png"
             b1.appendChild(i5)
+            pl1.classList.add('green')
+            setTimeout(function(){
+                pl1.classList.remove('green')
+            },500)
         }
         if(occur1(p1,5)==5){
             var b1 = document.getElementById("p15");
             i5.src = "Frame 4.png"
             b1.appendChild(i5)
+            pl1.classList.add('green')
+            setTimeout(function(){
+                pl1.classList.remove('green')
+            },500)
             win+=1;
             if(win==1){
                 alert("Player 1 Wins!!")
@@ -227,26 +330,46 @@ window.addEventListener("keydown",(event)=>{
         if(occur2(p2,1)==1){
             var b1 = document.getElementById("p21");
             b1.appendChild(j1)
+            pl2.classList.add('yellow')
+            setTimeout(function(){
+                pl2.classList.remove('yellow')
+            },500)
         }
         if(occur2(p2,1)==2){
             var b1 = document.getElementById("p21");
             j1.src="Frame 1.png"
             b1.appendChild(j1)
+            pl2.classList.add('yellow')
+            setTimeout(function(){
+                pl2.classList.remove('yellow')
+            },500)
         }
         if(occur2(p2,1)==3){
             var b1 = document.getElementById("p21");
             j1.src = "Frame 2.png"
             b1.appendChild(j1)
+            pl2.classList.add('yellow')
+            setTimeout(function(){
+                pl2.classList.remove('yellow')
+            },500)
         }
         if(occur2(p2,1)==4){
             var b1 = document.getElementById("p21");
             j1.src = "Frame 3.png"
             b1.appendChild(j1)
+            pl2.classList.add('yellow')
+            setTimeout(function(){
+                pl2.classList.remove('yellow')
+            },500)
         }
         if(occur2(p2,1)==5){
             var b1 = document.getElementById("p21");
             j1.src = "Frame 4.png"
             b1.appendChild(j1)
+            pl2.classList.add('yellow')
+            setTimeout(function(){
+                pl2.classList.remove('yellow')
+            },500)
             win+=1;
             if(win==1){
                 alert("Player 2 Wins!!")
@@ -259,26 +382,46 @@ window.addEventListener("keydown",(event)=>{
         if(occur2(p2,2)==1){
             var b1 = document.getElementById("p22");
             b1.appendChild(j2)
+            pl2.classList.add('yellow')
+            setTimeout(function(){
+                pl2.classList.remove('yellow')
+            },500)
         }
         if(occur2(p2,2)==2){
             var b1 = document.getElementById("p22");
             j2.src="Frame 1.png"
             b1.appendChild(j2)
+            pl2.classList.add('yellow')
+            setTimeout(function(){
+                pl2.classList.remove('yellow')
+            },500)
         }
         if(occur2(p2,2)==3){
             var b1 = document.getElementById("p22");
             j2.src = "Frame 2.png"
             b1.appendChild(j2)
+            pl2.classList.add('yellow')
+            setTimeout(function(){
+                pl2.classList.remove('yellow')
+            },500)
         }
         if(occur2(p2,2)==4){
             var b1 = document.getElementById("p22");
             j2.src = "Frame 3.png"
             b1.appendChild(j2)
+            pl2.classList.add('yellow')
+            setTimeout(function(){
+                pl2.classList.remove('yellow')
+            },500)
         }
         if(occur2(p2,2)==5){
             var b1 = document.getElementById("p22");
             j2.src = "Frame 4.png"
             b1.appendChild(j2)
+            pl2.classList.add('yellow')
+            setTimeout(function(){
+                pl2.classList.remove('yellow')
+            },500)
             win+=1;
             if(win==1){
                 alert("Player 2 Wins!!")
@@ -291,26 +434,46 @@ window.addEventListener("keydown",(event)=>{
         if(occur2(p2,3)==1){
             var b1 = document.getElementById("p23");
             b1.appendChild(j3)
+            pl2.classList.add('yellow')
+            setTimeout(function(){
+                pl2.classList.remove('yellow')
+            },500)
         }
         if(occur2(p2,3)==2){
             var b1 = document.getElementById("p23");
             j3.src="Frame 1.png"
             b1.appendChild(j3)
+            pl2.classList.add('yellow')
+            setTimeout(function(){
+                pl2.classList.remove('yellow')
+            },500)
         }
         if(occur2(p2,3)==3){
             var b1 = document.getElementById("p23");
             j3.src = "Frame 2.png"
             b1.appendChild(j3)
+            pl2.classList.add('yellow')
+            setTimeout(function(){
+                pl2.classList.remove('yellow')
+            },500)
         }
         if(occur2(p2,3)==4){
             var b1 = document.getElementById("p23");
             j3.src = "Frame 3.png"
             b1.appendChild(j3)
+            pl2.classList.add('yellow')
+            setTimeout(function(){
+                pl2.classList.remove('yellow')
+            },500)
         }
         if(occur2(p2,3)==5){
             var b1 = document.getElementById("p23");
             j3.src = "Frame 4.png"
             b1.appendChild(j3)
+            pl2.classList.add('yellow')
+            setTimeout(function(){
+                pl2.classList.remove('yellow')
+            },500)
             win+=1;
             if(win==1){
                 alert("Player 2 Wins!!")
@@ -323,26 +486,46 @@ window.addEventListener("keydown",(event)=>{
         if(occur2(p2,4)==1){
             var b1 = document.getElementById("p24");
             b1.appendChild(j4)
+            pl2.classList.add('yellow')
+            setTimeout(function(){
+                pl2.classList.remove('yellow')
+            },500)
         }
         if(occur2(p2,4)==2){
             var b1 = document.getElementById("p24");
             j4.src="Frame 1.png"
             b1.appendChild(j4)
+            pl2.classList.add('yellow')
+            setTimeout(function(){
+                pl2.classList.remove('yellow')
+            },500)
         }
         if(occur2(p2,4)==3){
             var b1 = document.getElementById("p24");
             j4.src = "Frame 2.png"
             b1.appendChild(j4)
+            pl2.classList.add('yellow')
+            setTimeout(function(){
+                pl2.classList.remove('yellow')
+            },500)
         }
         if(occur2(p2,4)==4){
             var b1 = document.getElementById("p24");
             j4.src = "Frame 3.png"
             b1.appendChild(j4)
+            pl2.classList.add('yellow')
+            setTimeout(function(){
+                pl2.classList.remove('yellow')
+            },500)
         }
         if(occur2(p2,4)==5){
             var b1 = document.getElementById("p24");
             j4.src = "Frame 4.png"
             b1.appendChild(j4)
+            pl2.classList.add('yellow')
+            setTimeout(function(){
+                pl2.classList.remove('yellow')
+            },500)
             win+=1;
             if(win==1){
                 alert("Player 2 Wins!!")
@@ -355,26 +538,46 @@ window.addEventListener("keydown",(event)=>{
         if(occur2(p2,5)==1){
             var b1 = document.getElementById("p25");
             b1.appendChild(j5)
+            pl2.classList.add('yellow')
+            setTimeout(function(){
+                pl2.classList.remove('yellow')
+            },500)
         }
         if(occur2(p2,5)==2){
             var b1 = document.getElementById("p25");
             j5.src="Frame 1.png"
             b1.appendChild(j5)
+            pl2.classList.add('yellow')
+            setTimeout(function(){
+                pl2.classList.remove('yellow')
+            },500)
         }
         if(occur2(p2,5)==3){
             var b1 = document.getElementById("p25");
             j5.src = "Frame 2.png"
             b1.appendChild(j5)
+            pl2.classList.add('yellow')
+            setTimeout(function(){
+                pl2.classList.remove('yellow')
+            },500)
         }
         if(occur2(p2,5)==4){
             var b1 = document.getElementById("p25");
             j5.src = "Frame 3.png"
             b1.appendChild(j5)
+            pl2.classList.add('yellow')
+            setTimeout(function(){
+                pl2.classList.remove('yellow')
+            },500)
         }
         if(occur2(p2,5)==5){
             var b1 = document.getElementById("p25");
             j5.src = "Frame 4.png"
             b1.appendChild(j5)
+            pl2.classList.add('yellow')
+            setTimeout(function(){
+                pl2.classList.remove('yellow')
+            },500)
             win+=1;
             if(win==1){
                 alert("Player 2 Wins!!")
@@ -387,4 +590,3 @@ window.addEventListener("keydown",(event)=>{
     
     }
     }
-)

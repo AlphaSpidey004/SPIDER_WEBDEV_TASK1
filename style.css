@@ -20,3 +20,26 @@ table {
   width: 100%;
   height: 720px;
 }
+.click {
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background: greenyellow;
+  border-radius: 15px;
+  font-size: 60px;
+  left: 10%;
+  bottom: 50%;
+  position: relative;
+  display: block;
+}
+.click:hover {
+  cursor: pointer;
+  color: black;
+}
+.green {
+  background-color: lightgreen;
+}
+.yellow {
+  background-color: crimson;
+  color: white;
+}
